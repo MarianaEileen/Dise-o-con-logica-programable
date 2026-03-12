@@ -78,10 +78,8 @@ initial
       pulsar_confirmar();
 
       #400;
-
-      if (LEDR[6])
-      else
-			$finish;
+		$stop;
+		$finish;
     end
 
 endmodule
