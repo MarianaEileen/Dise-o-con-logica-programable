@@ -16,7 +16,7 @@ Password DUT (
 .LEDR(LEDR)
 );
 
-defparam DUT.divisor.FREQ = 25_000_00;
+defparam DUT.divisor.FREQ = 25_000_000;
 
 always 
 #10 
@@ -25,7 +25,6 @@ clk = ~clk;
 // tiempo de simulacion
 task pulsar_confirmar;
 	begin
-		$display("  -> CONFIRMAR");
       KEY[1] = 0;                // presionar
       #400; // mantener 
       KEY[1] = 1;                // soltar
@@ -35,18 +34,15 @@ endtask
 
 task pulsar_reset;
 	begin
-		$display("RESET");
       KEY[0] = 0;
       #400;
       KEY[0] = 1;
-      $display("RESET liberado");
       #400;
 	end
 endtask
 
 initial
 	begin
-		$display("=== SIMULACION INICIADA ===");
       clk = 0;
       SW  = 0;
       KEY = 2'b11;
@@ -55,48 +51,36 @@ initial
 		
       pulsar_reset();// RESET
 		
-      // Secuencia: D C B A
+      // Secuencia
       SW = 4'hD;
-      $display("Enviando caracter: D");
       pulsar_confirmar();
 
       SW = 4'hC;
-      $display("Enviando caracter: C");
       pulsar_confirmar();
 		
 		SW = 4'h5;
-      $display("Enviando caracter erroneo: 5");
       pulsar_confirmar();
 		
 		pulsar_reset();
 		  
 		SW = 4'hD;
-		$display("Enviando caracter: D");
 		pulsar_confirmar();
 
       SW = 4'hC;
-      $display("Enviando caracter: C");
       pulsar_confirmar();
 
       SW = 4'hB;
-      $display("Enviando caracter: B");
       pulsar_confirmar();
 
       SW = 4'hA;
-      $display("Enviando caracter: A");
       pulsar_confirmar();
 
-      $display("Confirmacion final");
       pulsar_confirmar();
 
       #400;
 
       if (LEDR[6])
-			$display("=== SUCCESS: GOOD ===");
       else
-         $display("=== ERROR: LEDR = %b ===", LEDR);
-
-			$display("=== FIN DE SIMULACION ===");
 			$finish;
     end
 
