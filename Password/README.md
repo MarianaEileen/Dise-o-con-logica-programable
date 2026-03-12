@@ -25,3 +25,7 @@ Si la secuencia es correcta, se mostrará "Good" en los displays de 7 segmentos.
 Si en cualquier punto hay un error, se mostrará "Bad" en los displays de 7 segmentos.
 
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/a4b213e0-6008-44c1-8424-2fe6e3397c64" />
+
+<img width="953" height="286" alt="{1F4DA579-C299-4DBD-A2C5-A62312E787BB}" src="https://github.com/user-attachments/assets/899d9f46-e92c-481c-b417-a27ceaf9bc10" />
+
+<img width="483" height="467" alt="{950493B8-5058-424A-9239-9BE476F0F1C3}" src="https://github.com/user-attachments/assets/427f1a8d-3dcf-4fa3-9dfa-0578b85d5712" />
