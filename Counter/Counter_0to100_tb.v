@@ -15,11 +15,7 @@ Counter_0to100 DUT(
 .numero(numero)
 );
 
-initial
-	begin
-		clk = 0;
-		forever #5 clk = ~clk;
-	end
+always #5 clk = ~clk;
 
 initial
 	begin
@@ -77,8 +73,10 @@ initial
 		#50;
 		load=0;
 		#1000;
+		
+		$stop;
+		$finish;
 	end
 	
 endmodule
-
 
