@@ -20,10 +20,11 @@ Entradas: 4 switches (SW[3:0])
 Salidas: LED
 Subir el repositorio donde se encuentran los archivos .v de los módulos, su testbench, y las imágenes necesarias para comprobar el óptimo funcionamiento del sistema.
 
-<img width="1200" height="1600" alt="Image" src="https://github.com/user-attachments/assets/86c36b4c-c1a4-4440-b523-d36e62ff0928" />
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/49ddc514-ceb4-4dfd-9fd7-fe28e63f63b1" />
 
-<img width="1200" height="1600" alt="Image" src="https://github.com/user-attachments/assets/f2fecb7a-12d4-493c-895b-c2636b4dfc94" />
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/fff3267e-771f-4ae0-9d37-13cec8b3b0e1" />
 
-<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/b3035cea-87cc-41c5-b7e1-088fce3d41b1" />
+<img width="735" height="310" alt="{187EE628-F28D-4EB4-BB10-E24B5B865AC3}" src="https://github.com/user-attachments/assets/f7ddab1a-fd60-47d2-8d92-472d9c9cbf55" />
 
-<img width="1600" height="1200" alt="Image" src="https://github.com/user-attachments/assets/14e108ab-9a4f-40e4-b68e-c3025688d63e" />
+<img width="926" height="320" alt="{7AACA104-C2F4-4310-95FB-53AFF2DE4CCC}" src="https://github.com/user-attachments/assets/47097ebb-b6c0-4c04-a1e9-9e8d2e0ee6bc" />
+
