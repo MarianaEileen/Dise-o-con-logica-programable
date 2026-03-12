@@ -22,40 +22,32 @@ clk= ~clk;
 
 initial
 	begin
-		$display("Iniciando simulación");
 		clk=0;
 		reset=0;
 		SW=0;
 		
 		#10;
 		
-		$display("Activando reset");
 		reset=1;
 		#10;
-		$display("Desactivando reset");
 		reset=0;
 		#10;
-		
-		$display("Cambiando ángulo del servo");
-		$display("Ángulo: 180");
+// angulos
 		SW=180;
 		#10;
-		$display("Ángulo: 90");
 		SW=90;
 		#10;
-		$display("Ángulo: 64");
 		SW=64;
 		#10;
 		
-		$display("Activando reset");
 		reset=1;
 		#10;
-		$display("Desactivando reset");
 		reset=0;
 		#10;
 		
 		$stop;
 		$finish;
 	end
+
 
 endmodule
